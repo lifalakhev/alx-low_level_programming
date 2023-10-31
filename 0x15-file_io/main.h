@@ -1,6 +1,7 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
+#include <elf.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -16,5 +17,16 @@ int append_text_to_file(const char *filename, char *text_content);
 void print_error_and_exit(int exit_code, const char *error_message);
 void print_hex(uint8_t *buffer, size_t size);
 void print_elf_header(uint8_t *buffer);
+
+void check_elf(unsigned char *e_ident);
+void print_magic(unsigned char *e_ident);
+void print_class(unsigned char *e_ident);
+void print_data(unsigned char *e_ident);
+void print_osabi(unsigned char *e_ident);
+void print_version(unsigned char *e_ident);
+void print_abi(unsigned char *e_ident);
+void print_type(unsigned int e_type, unsigned char *e_ident);
+void print_entry(unsigned long int e_entry, unsigned char *e_ident);
+void close_elf(int elf);
 
 #endif
