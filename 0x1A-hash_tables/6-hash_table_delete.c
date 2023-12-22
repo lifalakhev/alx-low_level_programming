@@ -1,6 +1,7 @@
 #include "hash_tables.h"
+
 /**
- * hash_table_delete - free hash table and all nodes
+ * hash_table_delete - frees hash table and all nodes.
  * @ht: pointer to hash table
  *
  */

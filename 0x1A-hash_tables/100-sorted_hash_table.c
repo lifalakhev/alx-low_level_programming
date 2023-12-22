@@ -1,8 +1,9 @@
 #include "hash_tables.h"
+
 /**
- * sorted_list - function for insert new node in sorted
- * @ht: pointer to sorted hash table
- * @new_node: pew node to insert
+ * sorted_list - function for inserts new node in sorted.
+ * @ht: pointer to sorted hash table.
+ * @new_node: pew node to insert.
  *
  */
 void sorted_list(shash_table_t *ht, shash_node_t *new_node)

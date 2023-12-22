@@ -1,6 +1,7 @@
 #include "hash_tables.h"
+
 /**
- * hash_table_print - function to print the key:value from ht
+ * hash_table_print - function to prints the key value from ht.
  * @ht: pointer to hash table
  *
  */
